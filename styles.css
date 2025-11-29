@@ -1,0 +1,173 @@
+/* === GLOBAL RESET === */
+*{
+    box-sizing:border-box;
+    font-family:Inter, system-ui, Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+/* === BACKGROUND IMAGE FIXED === */
+body {
+    background: url("images/bg.jpeg") no-repeat center center fixed !important;
+    background-size: cover !important;
+    color: #000 !important;   /* Pure site text color = BLACK */
+}
+
+/* Root colors */
+:root{
+    --card:#0f3a63; 
+    --accent:#1e6fc0; 
+    --accent2:#0a4a74; 
+    --muted:rgba(0,0,0,0.65); /* black text compatibility */
+}
+
+/* Structure */
+html, body {
+    height:100%;
+}
+
+/* Container */
+.container{
+    max-width:420px;
+    margin:32px auto;
+    padding:16px;
+}
+
+/* Card */
+.card{
+    background:rgba(255,255,255,0.40); /* Glass effect */
+    backdrop-filter:blur(8px);
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.2);
+    text-align:center;
+    color:#000;
+}
+
+/* Logo */
+.logo{
+    display:inline-block;
+    background:#fff;
+    padding:8px 12px;
+    border-radius:8px;
+    margin-bottom:12px;
+    color:#0f3a63;
+    font-weight:700;
+}
+
+/* Headings */
+h1,h2{
+    margin:10px 0;
+    color:#000;
+}
+
+/* Description text */
+.lead{
+    color:#444;
+    margin-bottom:12px;
+}
+
+/* Input fields */
+.input{
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid rgba(0,0,0,0.25);
+    background:rgba(255,255,255,0.75);
+    color:#000;
+    font-size:16px;
+    margin:10px 0;
+}
+
+/* Button */
+.btn{
+    display:block;
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:0;
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    color:#fff;
+    font-weight:700;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+/* Big buttons */
+.big-btn{
+    display:inline-block;
+    padding:12px 18px;
+    border-radius:10px;
+    background:linear-gradient(90deg,#1a6fc0,#084d7d);
+    color:#fff;
+    font-weight:700;
+    text-decoration:none;
+    margin:6px;
+}
+
+/* Card preview */
+.card-preview{
+    background:rgba(255,255,255,0.55);
+    backdrop-filter:blur(6px);
+    border-radius:12px;
+    padding:14px;
+    color:#000;
+    margin:12px 0;
+    text-align:left;
+}
+
+.preview-number{
+    font-weight:700;
+    letter-spacing:3px;
+    font-size:18px;
+    margin-top:8px;
+}
+
+.preview-meta{
+    display:flex;
+    justify-content:space-between;
+    color:#333;
+    margin-top:8px;
+    font-weight:700;
+}
+
+/* Missed CTA */
+.missed-cta{
+    display:block;
+    background:#ffcc66;
+    color:#05305f;
+    padding:12px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:800;
+    margin:12px 0;
+    text-align:center;
+}
+
+.missed-cta.alt{
+    background:#2b9cd6;
+    color:#fff;
+}
+
+/* Small text */
+.small{
+    font-size:13px;
+    color:#333;
+    margin-top:8px;
+    text-align:center;
+}
+
+.footer-space{
+    height:30px;
+}
+
+.center-row{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+}
+
+@media(max-width:460px){
+    .container{padding:12px}
+    .card{padding:16px}
+}

